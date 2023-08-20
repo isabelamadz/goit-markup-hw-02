@@ -1,5 +1,13 @@
+:root{
+    --iris: #4D5AE5;
+    --navyblue: #2E2F42;
+    --slate:#434455;
+    --white: #FFF;
+    --cloud: #F4F4FD;
+}
+
 .web {
-    color: var(--iris, #4D5AE5);
+    color: var(--iris);
     font-family: Raleway;
     font-size: 18px;
     font-style: normal;
@@ -11,8 +19,8 @@
 }
 
 .studio {
-    color: var(--navyblue, #2E2F42)
-    font-family: Raleway;
+    color: var(--navyblue,); 
+    font-family: "Raleway"; 
     font-size: 18px;
     font-style: normal;
     font-weight: 800;
@@ -22,8 +30,8 @@
     text-transform: uppercase;
 }
 
-.site-nav {
-    color: var(--slate, #434455);
+.header-class .logo, .header-class a {
+    color: var(--slate);
     text-decoration: none;
     font-family: Roboto;
     font-size: 16px;
@@ -34,12 +42,16 @@
     letter-spacing: 0.32px;
 }
 
+.site-nav a:hover, .site-nav a:focus {
+    color: var(--iris);
+}
+
 .above-fold {
     background: #2E2F42;
 }
 
 body {
-    color: var(--slate, #434455);
+    color: var(--slate);
     /* Body */
     font-family: Roboto;
     font-size: 16px;
@@ -50,8 +62,8 @@ body {
     letter-spacing: 0.32px;
 }
 
-.body-h1 {
-    color: var(--white, #FFF);
+.hero-heading {
+    color: var(--white);
     font-family: Roboto;
     font-size: 56px;
     font-weight: 700;
@@ -60,14 +72,15 @@ body {
     text-align: center;
 }
 
-.button {
+.order-button {
     display: inline-flex;
-    padding: 16px 32px;
+    padding: 10px 20px;
     align-items: flex-start;
     gap: 10px;
-    color: var(--white, #FFF);
-    border-radius: 4px;
-    background: var(--iris, #4D5AE5);
+    color: var(--white);
+    border-radius: 12px;
+    border: none;
+    background: var(--iris);
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
     /* Button Text */
     font-family: Roboto;
@@ -79,8 +92,13 @@ body {
     letter-spacing: 0.64px;
 }
 
-body-h2 {
-    color: var(--navyblue, #2E2F42);
+.order-button:hover, .order-button:focus {
+    background-color: var(--white);
+    color: var(--navyblue);
+}
+
+.subheader {
+    color: var(--navyblue);
     text-align: center;
     /* Header 2 */
     font-family: Roboto;
@@ -92,8 +110,8 @@ body-h2 {
     text-transform: capitalize;
 }
 
-body-h3 {
-    color: var(--navyblue, #2E2F42);
+.features {
+    color: var(--navyblue);
     /* Header 3 */
     font-family: Roboto;
     font-size: 20px;
@@ -113,13 +131,13 @@ ul {
     
 }
 
-.footer {
+.footer-class {
     background: #2E2F42;
 
 }
 
-.text {
-    color: var(--cloud, #F4F4FD);
+.footer-class .text {
+    color: var(--cloud);
     /* Body */
     font-family: Roboto;
     font-size: 16px;
@@ -130,8 +148,13 @@ ul {
     letter-spacing: 0.32px;
     width: 264px;
 }
-.studio {
-    color: var(--cloud, #F4F4FD);
+
+.footer-class .logo {
+    text-decoration: none;
+}
+
+.studio-2 {
+    color: var(--cloud);
     font-family: Raleway;
     font-size: 18px;
     font-style: normal;
