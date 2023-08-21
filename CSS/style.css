@@ -12,9 +12,8 @@
     color: var(--iris);
     font-family: Raleway;
     font-size: 18px;
-    font-style: normal;
     font-weight: 800;
-    line-height: 21px;
+    line-height: 1.5;
     /* 116.667% */
     letter-spacing: 0.54px;
     text-transform: uppercase;
@@ -24,9 +23,8 @@
     color: var(--navyblue,); 
     font-family: "Raleway"; 
     font-size: 18px;
-    font-style: normal;
     font-weight: 800;
-    line-height: 21px;
+    line-height: 1.5;
     /* 116.667% */
     letter-spacing: 0.54px;
     text-transform: uppercase;
@@ -37,15 +35,14 @@
     text-decoration: none;
     font-family: Roboto;
     font-size: 16px;
-    font-style: normal;
     font-weight: 500;
-    line-height: 24px;
+    line-height: 1.5;
     /* 150% */
     letter-spacing: 0.32px;
     transition:0.3s;
 }
 
-.site-nav a:hover, .site-nav a:focus {
+.site-nav a:hover, .site-nav a:focus, .site-nav ul:hover {
     color: var(--iris);
 }
 
@@ -56,11 +53,10 @@
 body {
     color: var(--slate);
     /* Body */
-    font-family: Roboto;
+    font-family: Roboto, sans-serif;
     font-size: 16px;
-    font-style: normal;
     font-weight: 400;
-    line-height: 24px;
+    line-height: 1.5;
     /* 150% */
     letter-spacing: 0.32px;
 }
@@ -70,7 +66,7 @@ body {
     font-family: Roboto;
     font-size: 56px;
     font-weight: 700;
-    line-height: 60px;
+    line-height: 1;
     letter-spacing: 1.12px;
     text-align: center;
 }
@@ -88,9 +84,8 @@ body {
     /* Button Text */
     font-family: Roboto;
     font-size: 16px;
-    font-style: normal;
     font-weight: 500;
-    line-height: 24px;
+    line-height: 1.5;
     /* 150% */
     letter-spacing: 0.64px;
     cursor: pointer;
@@ -99,6 +94,11 @@ body {
 .order-button:hover, .order-button:focus {
     background-color: var(--white);
     color: var(--navyblue);
+}
+
+.order-button:active {
+    background-color: var(--ocean);
+    color: var(--cloud)
 }
 
 .portfolio-buttons {
@@ -114,8 +114,13 @@ body {
     cursor: pointer;
 }
 
-.portfolio-buttons:hover{
+.portfolio-buttons:hover {
     background-color:var(--ocean);
+    color: var(--cloud)
+}
+
+.portfolio-buttons:active {
+    background-color: var(--slate);
     color: var(--cloud)
 }
 
@@ -126,7 +131,7 @@ body {
     font-family: Roboto;
     font-size: 36px;
     font-weight: 700;
-    line-height: 40px;
+    line-height: 2;
     /* 111.111% */
     letter-spacing: 0.72px;
     text-transform: capitalize;
@@ -138,18 +143,19 @@ body {
     font-family: Roboto;
     font-size: 20px;
     font-weight: 300;
-    line-height: 24px;
+    line-height: 1.5;
     /* 120% */
     letter-spacing: 0.4px;
 }
 
-ul {
+.site-nav, .contact, .items {
     list-style-type: none;
     /* Remove bullets */
     padding: 0;
     /* Remove padding */
     margin: 0;
     /* Remove margins */
+    font-style: normal;
     
 }
 
@@ -163,9 +169,8 @@ ul {
     /* Body */
     font-family: Roboto;
     font-size: 16px;
-    font-style: normal;
     font-weight: 400;
-    line-height: 24px;
+    line-height: 1.5;
     /* 150% */
     letter-spacing: 0.32px;
     width: 264px;
@@ -179,9 +184,8 @@ ul {
     color: var(--cloud);
     font-family: Raleway;
     font-size: 18px;
-    font-style: normal;
     font-weight: 800;
-    line-height: 21px;
+    line-height: 1.5;
     /* 116.667% */
     letter-spacing: 0.54px;
     text-transform: uppercase;
