@@ -46,7 +46,7 @@
     color: var(--iris);
 }
 
-.contact-info a:hover .contact-info a:focus, .contact-info ul:hover {
+.contact-info a:hover, .contact-info a:focus, .contact-info ul:hover {
     color: var(--iris);
 }
 
