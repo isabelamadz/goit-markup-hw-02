@@ -46,6 +46,10 @@
     color: var(--iris);
 }
 
+.contact-info a:hover .contact-info a:focus, .contact-info ul:hover {
+    color: var(--iris);
+}
+
 .above-fold {
     background: var(--navyblue);
 }
@@ -101,6 +105,16 @@ body {
     color: var(--cloud)
 }
 
+.portfolio-nav-button, .porfolio-service {
+    list-style-type: none;
+    /* Remove bullets */
+    padding: 0;
+    /* Remove padding */
+    margin: 0;
+    /* Remove margins */
+    font-style: normal;
+}
+
 .portfolio-buttons {
     border-radius: 4px;
     border: 1px solid var(--cornflower);
@@ -148,7 +162,7 @@ body {
     letter-spacing: 0.4px;
 }
 
-.site-nav, .contact, .items {
+.site-nav, .contact-info, .items {
     list-style-type: none;
     /* Remove bullets */
     padding: 0;
